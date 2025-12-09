@@ -18,9 +18,9 @@ The site includes several sections:
 - Embedded video demonstration of the site
 
 ## Technologies Used
-- HTML5
-- CSS3
-- Mobile-first responsive design
+- HTML
+- CSS
+- Mobile responsive design
 
 ## Project Structure
 - `index.html`
