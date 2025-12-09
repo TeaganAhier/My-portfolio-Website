@@ -1,0 +1,387 @@
+/* Sidebar Styling */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Initially off-screen */
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    /* White background for sidebar */
+    color: black;
+    /* Black text color */
+    border: 2px solid black;
+    /* Black border */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    /* Smooth transition */
+    z-index: 1000;
+    padding-top: 40px;
+    /* Add space for the close button */
+}
+
+/* Sidebar links */
+#sidebar .pageNav a {
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    /* Black borders for items */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Remove list style (bullet points) */
+#sidebar .pageNav,
+#sidebar .pageNav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Show sidebar when clicked (via :target) */
+#clicked:target #sidebar {
+    right: 0;
+}
+
+/* Hamburger icon */
+.showNav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    position: fixed;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    top: 87px;
+    right: 20px;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid white;
+}
+
+/* Close button inside sidebar (X button) */
+.off {
+    display: none;
+    /* Hide close button initially */
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    /* Position inside the sidebar */
+    font-size: 30px;
+    color: black;
+    /* Color of the X button */
+    cursor: pointer;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Show close button when sidebar is open */
+#clicked:target .off {
+    display: block;
+}
+
+/* Dropdown for Projects */
+.dropdownMenu {
+    display: none;
+    /* Hide the dropdown by default */
+    background-color: #333;
+    padding-left: 20px;
+}
+
+.dropdownMenu a {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+/* When the parent item is clicked, show the dropdown */
+#sidebar .dropdown:target .dropdownMenu {
+    display: block;
+}
+
+/* Styling for the individual projects links in the dropdown */
+#sidebar .dropdownMenu a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* Project Styling */
+.project {
+    margin-bottom: 20px;
+    /* Adds space between projects */
+}
+
+.project img {
+    width: 100%;
+    /* Make sure images are responsive */
+    height: auto;
+}
+
+/* Header Styling */
+h1.neonText {
+    font-family: 'NEONCITY Script', sans-serif;
+    font-size: 50px;
+    /* Smaller font size */
+    font-weight: normal;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ff0000,
+        0 0 82px #ff0000,
+        0 0 92px #ff0000,
+        0 0 102px #ff0000,
+        0 0 151px #ff0000;
+    animation: pulsate 1.5s infinite alternate;
+    margin: 0;
+    text-align: center;
+    /* Center the text */
+}
+
+.neonText h1 {
+    font-weight: bolder;
+    /* Make "Teagan" bold */
+}
+
+h2.neonText {
+    font-family: "Monoton", sans-serif;
+    font-size: 50px;
+    /* Smaller font size */
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ff0000,
+        0 0 82px #ff0000,
+        0 0 92px #ff0000,
+        0 0 102px #ff0000,
+        0 0 151px #ff0000;
+    animation: pulsate 1.5s infinite alternate;
+    margin: 0;
+    text-align: center;
+    /* Center the text */
+}
+
+.subheading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #ff0000;
+}
+
+footer {
+    background-color: #be3b45;
+    color: white;
+    grid-area: footer;
+}
+
+/* Header */
+header {
+    background-color: #fad5e6;
+    padding: 3em;
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+}
+
+
+/* Mobile-specific layout adjustments */
+
+/* Stack the containers vertically on mobile */
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    /* Stack containers vertically */
+    align-items: center;
+    /* Center the containers */
+    padding: 20px;
+}
+
+/* Adjust width of the containers to ensure they fit properly */
+.emailForm,
+.pinkContainer {
+    width: 90%;
+    /* Adjust width to make them fit better on smaller screens */
+    margin: 10px 0;
+    /* Add margin between containers */
+}
+
+/* Form input and button adjustments for mobile */
+.emailForm input[type="text"],
+.emailForm textarea,
+.pinkContainer input[type="text"],
+.pinkContainer textarea {
+    width: 90%;
+    /* Full width on mobile */
+    margin: 10px 0;
+}
+
+/* Make the button slightly smaller and adjust spacing on mobile */
+.emailForm input[type="button"],
+.pinkContainer input[type="button"] {
+    font-size: 16px;
+    padding: 12px 0;
+}
+
+.emailForm textarea {
+    width: 90%;
+    /* Adjust width */
+    height: 220px;
+    /* Adjust height for better readability */
+    resize: none;
+}
+
+
+/* Adjusting button size for mobile */
+.button {
+    font-size: 18px;
+    /* Adjust the font size for mobile */
+    width: 50px;
+    /* Resize button */
+    height: 50px;
+}
+
+.emailForm input[type="button"],
+.pinkContainer input[type="button"] {
+    font-size: 16px;
+    /* Adjust font size of buttons */
+    padding: 12px;
+    /* Adjust padding for touch screens */
+}
+
+/* Adjust font size of contact section for mobile */
+h3.titleContact {
+    font-size: 22px;
+    /* Smaller font size for mobile */
+    margin-bottom: 20px;
+}
+
+/* Video Container for mobile */
+.VideoContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    /* Height of video container */
+}
+
+/* Video styling for mobile */
+video {
+    width: 60%;
+    /* 60% width for mobile */
+    height: auto;
+    position: relative;
+    /* Keeps it inside the container */
+    z-index: -3;
+    transform: translate(-18%, -20%);
+}
+
+.VideoContainer iframe {
+    width: 80%;
+    height: 40%;
+    max-width: 100%;
+    border: none;
+    transform: translate(-4%, -40%);
+    z-index: -5;
+}
+
+
+/* TV Styling for mobile */
+.tv {
+    position: absolute;
+    z-index: -2;
+    width: 70%;
+    /* 30% width for mobile */
+    height: auto;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+}
+
+.tv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjusting the styling of the image links for better mobile view */
+.pink-container a {
+    color: #be3b45;
+    /* Matching color to the theme */
+    font-size: 18px;
+    text-decoration: underline;
+    /* Make links look clickable */
+    display: block;
+    margin: 10px 0;
+}
+
+.pink-container a:hover {
+    color: #ff0000;
+    /* Change color when hovering */
+}
+
+
+.containerContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.emailForm,
+.pinkContainer {
+    width: 90%;
+    /* Adjust width to make them fit better on smaller screens */
+    margin: 10px 0;
+    /* Add margin between containers */
+}
+
+.emailForm input[type="text"],
+.emailForm textarea,
+.pinkContainer input[type="text"],
+.pinkContainer textarea {
+    width: 90%;
+    /* Full width on mobile */
+    margin: 10px 0;
+}
+
+.emailForm textarea {
+    width: 90%;
+    /* Adjust width  */
+    height: 220px;
+    /* Adjust height for better readability */
+    resize: none;
+}
+
+/* Adjusting button size for mobile */
+.button {
+    font-size: 18px;
+    /* Adjust the font size for mobile */
+    width: 50px;
+    /* Resize button */
+    height: 50px;
+}
+
+h3.titleContact {
+    font-size: 22px;
+    margin-bottom: 20px;
+}

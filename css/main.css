@@ -1,0 +1,355 @@
+/* Checkerboard pattern for top section */
+.checkerboard {
+   background-image:
+      linear-gradient(45deg, #101010 25%, transparent 25%),
+      linear-gradient(-45deg, #101010 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #101010 75%),
+      linear-gradient(-45deg, transparent 75%, #101010 75%);
+   background-size: 40px 40px;
+   background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+   height: 50px;
+   width: 100%;
+}
+
+/* Checkerboard pattern for bottom section */
+.checkerboardBottom {
+   background-image:
+      linear-gradient(45deg, #101010 25%, transparent 25%),
+      linear-gradient(-45deg, #101010 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #101010 75%),
+      linear-gradient(-45deg, transparent 75%, #101010 75%);
+   background-size: 40px 40px;
+   background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+   height: 50px;
+   width: 100%;
+}
+
+/* Body font and background settings */
+body {
+   font-family: 'Antonio', sans-serif;
+   background-color: azure;
+   margin: 0;
+   padding: 0;
+}
+
+/* Title styling */
+.title {
+   font-family: 'Playfair Display', serif;
+   list-style: none;
+   color: #be3b45;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+/* Main content padding */
+main {
+   padding: 40px;
+}
+
+/* Welcome and about sections styling */
+.welcome,
+.about {
+   background-color: #FAB9D3;
+   padding: 20px;
+   margin: 20px auto;
+   width: 80%;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+   font-size: 20px
+}
+
+.welcome,
+.about h3 {
+   text-align: center;
+}
+
+/* Projects section styling */
+.projects {
+   background-color: #FAB9D3;
+   padding: 20px;
+   margin: 20px auto;
+   width: 80%;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+   font-size: 20px
+}
+
+.projects h1 {
+   text-align: center;
+}
+
+/* Button styling */
+.button {
+   display: inline-block;
+   text-decoration: none;
+   background-color: white;
+   color: black;
+   font-size: 24px;
+   width: 60px;
+   height: 60px;
+   border: 2px solid black;
+   border-radius: 50%;
+   text-align: center;
+   cursor: pointer;
+   position: relative;
+   box-shadow: 0 4px 8px #00000033;
+   margin: 10px;
+   transition: all 0.3s ease;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Footer styling */
+footer.title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+   padding: 5px 0;
+}
+
+/* Button hover effect */
+.button:hover {
+   background-color: black;
+   color: white;
+   box-shadow: 0 10px 20px #0000004D;
+   transform: translateY(-5px);
+}
+
+/* Button active effect */
+.button:active {
+   background-color: #333;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transform: translateY(2px);
+}
+
+/* Icon inside button styling */
+.button i {
+   font-size: 28px;
+   transition: all 0.3s ease;
+}
+
+/* Button icon hover effect */
+.button:hover i {
+   transform: scale(1.2);
+   color: white;
+}
+
+/* Individual project styling */
+.project {
+   background-color: #FAB9D3;
+   padding: 20px;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+   text-align: center;
+}
+
+.project img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 15px;
+}
+
+.project h1 {
+   font-size: 25px;
+   margin-bottom: 10px;
+   font-family: 'Playfair Display', serif;
+   color: #be3b45;
+}
+
+.project p {
+   font-size: 20px;
+   font-weight: bold;
+   color: #333;
+   text-align: justify;
+}
+
+/* TV image styling */
+.tv img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* Pink container styling for sections */
+.pink-container {
+   background-color: #fad5e6;
+   padding: 20px;
+   margin: 20px 0;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+}
+
+.pink-container h2 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #BE3B45;
+   margin-bottom: 15px;
+}
+
+.pink-container p {
+   font-size: 18px;
+   color: #333;
+}
+
+/* Flexbox layout for design images */
+.design-images {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   margin-top: 15px;
+}
+
+.design-img {
+   width: 30%;
+   height: auto;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+}
+
+/* Validation reports styling */
+.validation-reports ul {
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 15px;
+}
+
+.validation-reports img {
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+}
+
+/* Heading styling */
+.heading {
+   font-family: 'Playfair Display', serif;
+}
+
+/* Contact form container styling */
+.containerContact {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 20px;
+}
+
+/* Form and pink container styling */
+.emailForm,
+.pinkContainer {
+   background-color: #fad5e6;
+   padding: 20px;
+   margin: 20px 0;
+   border: 3px solid #BE3B45;
+   box-shadow: 5px 5px 0px #3B393C;
+   width: 45%;
+   height: 100%;
+}
+
+/* Input fields styling for the contact form */
+.emailForm input[type="text"],
+.emailForm textarea,
+.pinkContainer input[type="text"],
+.pinkContainer textarea {
+   width: 97%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 2px solid #BE3B45;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: white;
+   color: #333;
+   height: 30px;
+}
+
+/* Contact form title and button styling */
+.emailForm {
+   font-family: 'Playfair Display', serif;
+   color: #be3b45;
+   font-size: 20px;
+}
+
+.emailForm input[type="button"],
+.pinkContainer input[type="button"] {
+   font-family: 'Antonio', sans-serif;
+   background-color: #be3b45;
+   color: white;
+   font-size: 18px;
+   padding: 15px 0;
+   border: 2px solid #be3b45;
+   border-radius: 30px;
+   cursor: pointer;
+   width: 100%;
+   text-align: center;
+   margin-top: 20px;
+   font-weight: bold;
+   box-shadow: 0 4px 8px #00000033;
+   transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.emailForm input[type="button"]:hover,
+.pinkContainer input[type="button"]:hover {
+   background-color: #a43d3d;
+   border-color: #a43d3d;
+   box-shadow: 0 4px 8px #00000033;
+   transform: translateY(-5px);
+}
+
+/* Pink container h2 styling */
+.pinkContainer h2 {
+   text-align: center;
+   font-size: 28px;
+   font-weight: bold;
+   color: #BE3B45;
+   margin-bottom: 15px;
+}
+
+/* Image styling in pink container */
+.pinkContainer .image,
+.emailForm .image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pinkContainer .image img,
+.emailForm .image img {
+   width: 40%;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+/* Paragraph styling for pink container */
+.pinkContainer p,
+.emailForm p {
+   font-size: 18px;
+   color: #333;
+}
+
+/* Contact section title styling */
+h3.titleContact {
+   font-size: 28px;
+   font-weight: bold;
+   text-align: center;
+   color: #be3b45;
+   margin-bottom: 20px;
+}
+
+/* Style for the links in mobile view */
+.mobile-links a {
+   color: #be3b45;
+   text-decoration: none;
+}
+
+.mobile-links a:hover {
+   color: #333;
+   text-decoration: underline;
+}
