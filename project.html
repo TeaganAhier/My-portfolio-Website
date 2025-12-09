@@ -5,47 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <link rel="stylesheet" href="../Assignment1/css/mobile.css" media="screen and (max-width:800px)">
-    <link rel="stylesheet" href="../Assignment1/css/desktop.css" media="screen and (min-width:800px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:800px)">
     <title>Project Page</title>
 
-    <!-- Font Imports -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.cdnfonts.com/css/neoncity-script');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Antonio:wght@300;400;700&display=swap');
-    </style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');</style>
+    <style>@import url('https://fonts.cdnfonts.com/css/neoncity-script');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Antonio:wght@300;400;700&display=swap');</style>
 
     <script src="https://kit.fontawesome.com/99b53bb863.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="../Assignment1/images/smudgepicture.png" type="image/x-icon">
+    <link rel="icon" href="images/smudgepicture.png" type="image/x-icon">
 </head>
 
 <body id="clicked">
 
-    <div class="checkerboard"></div> <!-- Background checkerboard effect -->
+    <div class="checkerboard"></div>
 
     <header class="remove">
-        <!-- Hamburger Menu Icon -->
         <a href="#clicked" class="showNav"></a>
-
-        <!-- Close button inside the sidebar -->
         <a href="#" class="off">x</a>
     </header>
 
-    <!-- Sidebar Navigation -->
     <nav id="sidebar">
         <ul class="pageNav">
-            <!-- Main Navigation Links -->
             <li><a href="index.html">Home</a></li>
+
             <li class="dropdown">
                 <a href="#projectsDropdown">Projects</a>
                 <ul class="dropdownMenu" id="projectsDropdown">
-                    <!-- Dropdown Menu for Project Links -->
                     <li><a href="project.html#ai-wardrobe">Wardrobe Assistant</a></li>
                     <li><a href="project.html#social-media-trends">Social Media Analysis</a></li>
                     <li><a href="project.html#music-suggestion">Music Recommendation App</a></li>
@@ -61,86 +49,69 @@
         </ul>
     </nav>
 
-    <!-- Main Content Section -->
     <main>
         <div class="projects-container">
-            <!-- Project: Wardrobe Assistant -->
+
             <div id="ai-wardrobe" class="project">
                 <h1>Wardrobe Assistant</h1>
-                <img src="../Assignment1/images/wardrobe.jpeg" alt="AI-Powered Wardrobe Assistant">
+                <img src="images/wardrobe.jpeg" alt="AI-Powered Wardrobe Assistant">
                 <p>This AI-based wardrobe assistant keeps track of your clothing inventory and suggests outfits based on
                     the current weather, the occasion and frequently bought together items from online retailers. It
                     helps optimise your wardrobe choices and makes it easier to plan your outfits.</p>
             </div>
-            
-            <!-- Project: Social Media Analysis -->
+
             <div id="social-media-trends" class="project">
                 <h1>Social Media Analysis</h1>
-                <img src="../Assignment1/images/ads.jpeg" alt="Social Media Analysis">
+                <img src="images/ads.jpeg" alt="Social Media Analysis">
                 <p>This tool uses AI to monitor trending items on social media platforms. By analysing real-time trends
                     and conversations, it helps e-commerce platforms like Amazon strategically adjust their advertising
                     and pricing to promote popular products and attract more customers.</p>
             </div>
-            
-            <!-- Project: Music Recommendation App -->
+
             <div id="music-suggestion" class="project">
                 <h1>Music Recommendation App</h1>
-                <img src=".//images/music.jpeg" alt="AI Music Mood and Genre Recommendation System">
+                <img src="images/music.jpeg" alt="AI Music Mood and Genre Recommendation System">
                 <p>An AI-powered music recommendation app that tracks what you're listening to and suggests new music
                     based on your mood, favorite artists and genre preferences. It can create custom playlists and
                     offer suggestions for similar songs, albums or artists that align with your music taste.</p>
             </div>
-            
-            <!-- Project: Recipe Generator -->
+
             <div id="cooking-app" class="project">
                 <h1>Recipe Generator</h1>
-                <img src="../Assignment1/images/cooking.jpeg" alt="AI Cooking Recipe Generator">
+                <img src="images/cooking.jpeg" alt="AI Cooking Recipe Generator">
                 <p>This cooking app uses AI to analyse the ingredients you have at home (via image uploads) and suggests
                     recipes you can make. It takes into account dietary preferences, allergies and whether you're
                     aiming for a healthy or indulgent meal. It can even avoid certain foods that you dislike.</p>
             </div>
-            
-            <!-- Project: Help for Homeless -->
+
             <div id="help-for-homeless" class="project">
                 <h1>Help for Homeless</h1>
-                <img src="../Assignment1/images/homeless.jpeg" alt="AI-Powered Kiosk for Supporting the Homeless">
+                <img src="images/homeless.jpeg" alt="AI-Powered Kiosk for Supporting the Homeless">
                 <p>An kiosk designed to assist homeless individuals by providing real-time access to
                     resources such as shelters, food, medical services and job opportunities. The kiosk 
                     guides users to the nearest available aid based on their location and needs, offering a convenient,
                     accessible way for those without smartphones to find support.</p>
             </div>
-            
-            <!-- Project: Facial Recognition Implementation -->
+
             <div id="facial-recognition" class="project">
                 <h1>Facial Recognition Implementation</h1>
-                <img src="..//Assignment1/images/facialRecognition.jpeg"
-                    alt="Facial Recognition for Contactless Payments">
+                <img src="images/facialRecognition.jpeg" alt="Facial Recognition for Contactless Payments">
                 <p>This system uses facial recognition to enable secure and contactless payments in retail
                     stores. It can also verify age for purchasing age-restricted products and entering age-restricted
                     areas, making shopping faster and more secure while reducing the need for physical contact.</p>
             </div>
+
         </div>
     </main>
 
-    <!-- Footer with Links to External Resources -->
     <footer class="title">
-        <a href="contact.html" class="button">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="file:///C:/Users/teaga/OneDrive%20-%20The%20University%20of%20Northampton/UON/CVs/TeaganAhier_CV6.pdf"
-            class="button">
-            <i class="fa-solid fa-file"></i>
-        </a>
-        <a href="https://github.com/TeaganAhier" class="button">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/teagan-ahier-304234336" class="button">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+        <a href="contact.html" class="button"><i class="fa-solid fa-envelope"></i></a>
+        <a href="file:///C:/Users/teaga/OneDrive%20-%20The%20University%20of%20Northampton/UON/CVs/TeaganAhier_CV6.pdf" class="button"><i class="fa-solid fa-file"></i></a>
+        <a href="https://github.com/TeaganAhier" class="button"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/teagan-ahier-304234336" class="button"><i class="fa-brands fa-linkedin-in"></i></a>
     </footer>
 
-    <div class="checkerboardBottom"></div> <!-- Background checkerboard effect at the bottom -->
+    <div class="checkerboardBottom"></div>
 
 </body>
-
 </html>
